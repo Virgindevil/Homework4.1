@@ -34,10 +34,10 @@ namespace Homework4._1
 
             Random rand = new Random();
             int[,] matrix = new int[y, x];
+            
+            Console.WriteLine("\n Матрица \n");
 
-            Console.CursorLeft = 30;
-            Console.WriteLine("\n = Матрица \n");
-            // Вывод первого массива-матрицы
+            // Вывод массива-матрицы
             for (int i = 0; i < y; i++)
             {
                 Console.Write("|");
@@ -50,21 +50,19 @@ namespace Homework4._1
             }
 
             // Сложение всех элементов матрицы
-            int add, add2, add3;
+            int add;
             int sum = 0;
             for (int i = 0; i < y; i++)
             {
                
                 for (int j = 0; j < x; j++)
                 {
-                    add = matrix[i, j];
-                    add2 = matrix[i, j];
-                    add3 = ((add + add2)/2);
-                    sum = sum + add3;
+                    add = matrix[i, j];                    
+                    sum = sum + add;
                 }
                 
             }
-            Console.WriteLine("\n = Сумма чисел матрицы \n");
+            Console.WriteLine("\n Сумма чисел матрицы \n");
             Console.WriteLine($" {sum} ");
             Console.ReadLine();
 
