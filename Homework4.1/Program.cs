@@ -43,7 +43,7 @@ namespace Homework4._1
                 Console.Write("|");
                 for (int j = 0; j < x; j++)
                 {
-                    matrix[i, j] = rand.Next(50);
+                    matrix[i, j] = rand.Next();
                     Console.Write($"{matrix[i, j],5} ");
                 }
                 Console.WriteLine("|");
